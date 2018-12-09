@@ -123,3 +123,6 @@ venv.bak/
 
 .pip
 
+# myself
+shoyo/media/
+

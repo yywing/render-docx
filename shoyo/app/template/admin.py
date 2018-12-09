@@ -1,3 +1,4 @@
 from django.contrib import admin
+from app.template.models import Template
 
-# Register your models here.
+admin.site.register(Template)
