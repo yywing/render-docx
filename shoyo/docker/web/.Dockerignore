@@ -1,11 +1,12 @@
 # ignore static files django collect to
 static/
+media/
+document/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-
 
 # C extensions
 *.so
@@ -115,15 +116,10 @@ venv.bak/
 # jetbrains
 .idea/
 
+
 # mac
 .DS_Store 
 
+
 # ignore flake8
 .flake8
-
-.pip
-
-# myself
-shoyo/media/
-shoyo/document
-

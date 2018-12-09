@@ -1,3 +1,4 @@
+import os
 import uuid
 
 from django.db import models
@@ -23,3 +24,7 @@ class Document(models.Model):
             ('editor', 'can edit it, and use'),
             ('owner', 'with full power'),
         )
+
+    @property
+    def path(self):
+        return os.path.join(settings.DOCUMENT_PATH, self.id.hex)
